@@ -1,9 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelMate – Explore the World</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>Hello, World!</h1>
+<body class="bg-white text-gray-800">
+
+  <!-- Hero Section -->
+  <header class="bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/1600x900/?travel,nature');">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <div class="text-center text-white px-4">
+        <h1 class="text-5xl font-bold mb-4">TravelMate</h1>
+        <p class="text-xl mb-6">Discover new places. Share your journey.</p>
+        <a href="#blogs" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold">Explore Blogs</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Section -->
+  <section id="blogs" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Latest Travel Blogs</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?beach" alt="Beach" class="w-full">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Tropical Paradise in Bali</h3>
+            <p class="text-gray-600 mb-4">Experience the serene beaches, friendly culture, and vibrant food in Bali.</p>
+            <a href="#" class="text-yellow-500 font-semibold">Read More →</a>
+          </div>
+        </div>
+        <!-- Blog Card 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?mountains" alt="Mountains" class="w-full">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Hiking Through the Alps</h3>
+            <p class="text-gray-600 mb-4">Join me as I hike through the snowy trails and majestic views of the Alps.</p>
+            <a href="#" class="text-yellow-500 font-semibold">Read More →</a>
+          </div>
+        </div>
+        <!-- Blog Card 3 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x250/?city,travel" alt="City" class="w-full">
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">Wandering the Streets of Tokyo</h3>
+            <p class="text-gray-600 mb-4">A colorful dive into Tokyo's urban wonder, food, tech, and tradition.</p>
+            <a href="#" class="text-yellow-500 font-semibold">Read More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 mt-10">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 TravelMate. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
